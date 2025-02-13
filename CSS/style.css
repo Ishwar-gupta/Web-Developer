@@ -39,6 +39,8 @@ button{
 button:hover{
     color: #333;
     background-color: white;
+    scale:1.025;
+    transition:0.95s;
 }
 a{
     text-decoration: none;
