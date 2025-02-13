@@ -158,6 +158,10 @@ span,#underline{
     color: red;
     font-size: 50px;
 }
+.project-card:hover{
+    scale:1.035;
+    transition:0.95s;
+}
 .project-card{
     border: 1px solid gray;
     height: 30vh;
