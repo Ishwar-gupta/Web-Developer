@@ -344,3 +344,69 @@ button{
     box-shadow: 0 4px 20px rgba(1, 255, 255, 0.25);
     top: 0;       
 }
+
+
+
+/* Now this code is for media query i.e responsive design  */
+
+
+
+@media only screen and (max-width:600px){
+    nav{
+        visibility: hidden;
+    }
+    
+    .logo h1{
+        visibility: visible;
+        text-align: center;
+        margin-left: 100%; 
+    }
+    .container{
+       display: flex;
+       flex-direction: column;
+    }
+    .box1,.para{
+        padding: 20px;
+        height: auto;
+        width:100%;
+        text-align: center;
+    }
+    .boxsiddhu{
+        visibility: hidden;
+        height: 0px;
+    }
+    .box4{
+        padding: 20px;
+        height: auto;
+        width:100% ;
+    }
+    .email{
+        margin-left: -10px;
+    }
+    .projectbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .buttton{
+        visibility: hidden;
+        height: 0;
+    }
+    .listbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .BLOG{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .contact-link form {
+        width: 100%;
+    }
+    #email{
+        margin-left: 0px;
+    }
+    .contact-link input,#email,#address, .contact-link textarea {
+        width: 100%;
+    }
+} 
