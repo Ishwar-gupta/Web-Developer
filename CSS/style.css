@@ -12,7 +12,8 @@ body{
     background-color: #00171f;
     color: white;
 }
-nav{
+.navbar{
+    font-size: larger;
     background-color:  #02181f;
     color: #0aefff;
     display: flex;
@@ -24,6 +25,7 @@ nav{
     top: 0;
     z-index: 10000;
 }
+
 ul{
     display: flex;
     gap: 30px;
@@ -45,6 +47,7 @@ button:hover{
     transition: 1.025s;
     cursor: pointer;
 }
+
 a{
     text-decoration: none;
     color: white;
@@ -61,16 +64,17 @@ a{
 }
 #welcome{
     color:#05deee;
+    font-size: 50px;
 }
 .web{
     margin-top: 20px;
 }
 #web,#abt{
     font-size: 50px;
-    color: navy;
+    color: white;
     text-shadow: 
-    0 0 10px rgb(0, 255, 242),
-    0 0 25px rgb(0, 255, 242);
+    0 0 8px rgb(0, 255, 242),
+    0 0 20px rgb(0, 255, 242);
     /* 0 0 30px rgb(0, 255, 243); */
 }
 .para{
@@ -81,9 +85,8 @@ a{
     font-size: x-large;
     text-align: justify;
 }
-.font-icons{
-    height: 100%;
-    width: 100%;    
+.cntr{
+    padding-top: 100px;
 }
 .spn{
     color: #05deee;
@@ -91,23 +94,23 @@ a{
 i{
     color: white;
 }
-.icons{
-    margin-top: 30px;
-    display: flex;
-    gap: 30px;
-}
 .box1{
     height: 75vh;
+    width: 100vh;
 }
 .boximg{
     height: 75vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .box4{
     height: 70vh;
 }
 #boximg{
-    margin-left: 150px;
-    height: 70vh;
+   margin-top: -90px;
+    height: 85vh;
+    width: 55vh;
 }
 .boxsiddhu{
     display: flex;
@@ -146,9 +149,11 @@ i{
 }
 .intro{
     margin-top: 10px;
+    padding-left: 5px;
 }
-.button{
+.button2{
     margin-top: 30px;
+    
 }
 #services,#underline{
     text-align: center;
@@ -174,6 +179,9 @@ span,#underline{
     height: 35vh;
     border-radius: 5px;
     box-shadow: 3px 3px 12px 0px #0cedfd;
+}
+.skill{
+    height: 55vh;
 }
 .project-card:hover{
     box-shadow: 2px 0px 15px 2px #0cedfd;
@@ -214,7 +222,6 @@ h3{
     text-align: center;
     margin-top: 20px;
 }
-
 button{
     background-color: #05deee;
     font-size: large;
@@ -227,7 +234,7 @@ button{
 #button{
     width: 150px;
     height: 50px;
-     margin: 10px;
+    margin: 10px;
     font-size: large;
 }
 #button:hover{
@@ -237,7 +244,7 @@ button{
 }
 .Box{
     height: 40vh;
-    border:1px solid black;
+    border: 1px solid black;
     box-shadow: 3px 3px 12px 0px #0cedfd;
 }
 .Box:hover{
@@ -296,10 +303,24 @@ button{
     height: 60%;
 }
 .blog1,.blog2,.blog3{
-    background-color: rgb(17, 16, 16);
+    background-color: #012631;
     color: white;
     box-shadow: 3px 3px 12px 0px #0cedfd;
     font-family: Arial, Helvetica, sans-serif;
+}
+.Sitebtn{
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.site{
+    background-color: #05deee;
+}
+.site:hover{
+    background-color: #043a4b;
+    color: #05deee;
+    font-weight: 600;
+    box-shadow: 0 0 15px #05deee;
 }
 .blog:hover{
     box-shadow: 2px 0px 15px 2px #0cedfd;
@@ -321,19 +342,37 @@ button{
     width: 49%;
     margin-bottom: 20px;
     font-size: large;
-}
-#email{
+ }
+ #sidpic{
+    mix-blend-mode: multiply;
+ }
+
+ #email{
     margin-left: 20px;
-}
+} 
 #textarea{
     padding: 10px 5px 50px 10px;
     font-size: x-large;
 }
 #messg{
     border: none;
-    padding: 15px 30px;
+    padding: 15px 40px;
     margin-top: 50px;
-    margin-left: 40%;
+    border-radius: 25px;
+}
+#cloneimg{
+    margin: 20px;
+}
+.nepaT{
+    margin-top: -35px;
+}
+#messg:hover{
+    color: #023135;
+    font-weight: 700;
+}
+.messg{
+    justify-content: center;
+   text-align: center;
 }
 #copyright{
     color: white;
@@ -344,40 +383,91 @@ button{
     box-shadow: 0 4px 20px rgba(1, 255, 255, 0.25);
     top: 0;       
 }
-
-
-
-/* Now this code is for media query i.e responsive design  */
-
-
+.hml{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#htl{
+    height: 100px;
+    width: 100px; 
+}
+.heding{
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+#hpara{
+    padding: 7px;
+    text-align: justify;
+    font-family: poppins sans-serif;
+    font-size: larger;
+}
 
 @media only screen and (max-width:600px){
-
+    
     *{
-        overflow-x:hidden;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
     }
     nav{
         visibility: hidden;
     }
-    
     .logo h1{
         visibility: visible;
         text-align: center;
-        margin-left: 100%; 
+       position: absolute;
+       top: 10px;
+       right: 110px;   
+       overflow: hidden;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
     }
     .container{
        display: flex;
        flex-direction: column;
     }
+    #welcome,#abt{
+        font-size: 30px;
+    }
+    #web{
+        font-size: 35px;
+        line-height: 1.4;
+    }
+    .container{
+        margin-top: -50px;
+    }
     .box1,.para{
-        padding: 20px;
         height: auto;
         width:100%;
         text-align: center;
     }
+    .sidimg{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .boximg{
+    height: auto;
+   width: 48vh;
+   
+    }
+    #boximg{
+        height: 70vh;
+        width:auto;
+        margin-top: 0px;
+    }
+    .descp{
+       font-size: 18px;
+    }
     .boxsiddhu{
         visibility: hidden;
-        height: 0px;
+        height: 0;
     }
     .box4{
         padding: 20px;
@@ -390,6 +480,10 @@ button{
     .projectbox{
         display: flex;
         flex-direction: column;
+    }
+    .button2{
+        justify-content: center;
+        text-align: center;
     }
     .buttton{
         visibility: hidden;
@@ -413,4 +507,10 @@ button{
     .contact-link input,#email,#address, .contact-link textarea {
         width: 100%;
     }
-} 
+    #copyright{
+        font-size: 17px;
+    }
+    .footer{
+        box-shadow: 0 5px 20px skyblue;
+    }
+}
